@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TEA.Test_TEA"
+             NavigationPage.HasNavigationBar="False">
+    <RelativeLayout BackgroundColor="white">
+        
+            <Image Source="inicio" Margin="0,0,0,0" HorizontalOptions="Fill" Aspect="Fill"
+              RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
+             RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}" />
+       
+        <Grid  RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
+               RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}">
+
+            <Frame HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand" HasShadow="False" BackgroundColor="Blue"  >
+                <Label Text="REALIZA EL TEST M-CHAT PARA NIÑOS CON AUTISMO"  TextColor="Yellow" FontAttributes="Bold" 
+                   FontSize="Large" FontFamily="stay and shine" HorizontalOptions="EndAndExpand" VerticalOptions="FillAndExpand" HorizontalTextAlignment="Center"/>
+            </Frame>
+            <Button Text="TEST M-CHAT" CornerRadius="40" BackgroundColor="Beige"  TextColor="Black" FontAttributes="Bold" BorderColor="ForestGreen"
+                BorderWidth="2.5" VerticalOptions="EndAndExpand" HorizontalOptions="Start" x:Name="btntest"  Clicked="btntest_Clicked"/>
+            <Button Text="Siguiente" TextTransform="None" CornerRadius="50" BackgroundColor="Beige" TextColor="black" FontAttributes="Bold"
+                    BorderColor="ForestGreen" BorderWidth="2.5" VerticalOptions="EndAndExpand" HorizontalOptions="EndAndExpand" x:Name="btnsiguiente" Clicked="btnsiguiente_Clicked"/>
+
+        </Grid>
+        
+    </RelativeLayout> 
+    
+       
+</ContentPage>
